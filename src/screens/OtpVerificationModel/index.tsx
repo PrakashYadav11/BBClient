@@ -4,6 +4,8 @@ import {
 } from "react-native";
 import CustomButton from "../../components/CustomButton";
 import styles from "./style";
+import { NavigationRoutes } from "../../shared/NavigationRoutes";
+import { useNavigation } from "@react-navigation/native";
 
 interface OTPVerificationModalProps {
   visible: boolean;
@@ -19,7 +21,7 @@ const OTPVerificationModal: React.FC<OTPVerificationModalProps> = ({ visible, on
     newOtp[index] = text;
     setOtp(newOtp);
   };
-
+const navigation = useNavigation();
   return (
     <Modal visible={visible} transparent animationType="fade">
       <View style={styles.overlay}>
@@ -50,7 +52,7 @@ const OTPVerificationModal: React.FC<OTPVerificationModalProps> = ({ visible, on
           </Text>
 
           {/* Submit Button */}
-         <CustomButton label={"Submit"} onPress={undefined}/>
+         <CustomButton label={"Submit"} onPress={()=>navigation.navigate(NavigationRoutes.bottom)}/>
 
           {/* Close Modal */}
           <TouchableOpacity onPress={onClose} style={styles.closeButton}>

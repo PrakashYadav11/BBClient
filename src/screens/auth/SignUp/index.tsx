@@ -6,9 +6,12 @@ import { Strings } from '../../../shared/strings';
 import CustomButton from '../../../components/CustomButton';
 import styles from './style';
 import OTPVerificationModal from '../../OtpVerificationModel'; // Import the modal
+import { useNavigation } from '@react-navigation/native';
+import { NavigationRoutes } from '../../../shared/NavigationRoutes';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   const [isModalVisible, setModalVisible] = useState(false);
+
 
   return (
     <View style={styles.container}>
@@ -37,7 +40,7 @@ const SignUp = () => {
         {/* Login Link */}
         <Text style={styles.footerText}>
           Already Have An Account?{" "}
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate(NavigationRoutes.login)}>
             <Text style={styles.loginText}>Login Now</Text>
           </TouchableOpacity>
         </Text>

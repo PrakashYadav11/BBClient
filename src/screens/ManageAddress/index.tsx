@@ -6,6 +6,7 @@ import globalStyles from '../../shared/theme/globalStyles';
 import Images from '../../assets';
 import styles from './style';
 import CustomButton from '../../components/CustomButton';
+import { Strings } from '../../shared/strings';
 
 
 const addresses = [
@@ -38,7 +39,7 @@ const ManageAddress = () => {
     <View style={globalStyles.containerBg}>
       <CustomHeader headerText={'Manage Address'}/>
       <TouchableOpacity style={styles.addAddressButton}>
-        <Text style={styles.addAddressText}>+ Add another address</Text>
+        <Text style={styles.addAddressText}>{Strings.plusaddAddress}</Text>
       </TouchableOpacity>
       <FlatList
         data={addresses}

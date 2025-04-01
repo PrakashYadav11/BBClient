@@ -7,4 +7,6 @@ export const NavigationRoutes = {
     chats:'Chats',
     bottom: 'BootamTabNavigation',
     signup:'SignUp',
+    login:'Login',
+    loginotpverification:'LoginOtpVerification',
 }
