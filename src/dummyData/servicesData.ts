@@ -36,4 +36,11 @@ export const servicesData = [
         price:"$250.25",
         rating:"4.3",
     },
+    {
+        id:6,
+        image:Images.imgthree,
+        name:"Car Mechanic",
+        price:"$250.25",
+        rating:"4.3",
+    },
 ];

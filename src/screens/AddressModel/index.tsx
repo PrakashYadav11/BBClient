@@ -9,6 +9,8 @@ import {
 import globalStyles from '../../shared/theme/globalStyles';
 import { Strings } from '../../shared/strings';
 import styles from './style';
+import { NavigationRoutes } from '../../shared/NavigationRoutes';
+import { useNavigation } from '@react-navigation/native';
 
 
 interface CustomModalProps {
@@ -24,6 +26,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
   userName = 'Michel',
   onAddAddress,
 }) => {
+  const navigation = useNavigation();
   return (
     <Modal
       animationType="fade"
@@ -54,7 +57,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
           {/* Add Address Button */}
           <TouchableOpacity
             style={styles.addButton}
-            onPress={onAddAddress}
+            onPress={()=>navigation.navigate(NavigationRoutes.addaddress)}
           >
             <Text style={[globalStyles.caption_16_700, styles.addButtonText]}>
               {Strings.clickHere}

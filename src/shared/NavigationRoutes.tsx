@@ -9,4 +9,10 @@ export const NavigationRoutes = {
     signup:'SignUp',
     login:'Login',
     loginotpverification:'LoginOtpVerification',
+    carmechanic:'CarMechanic',
+    addaddress:'AddAddress',
+    manageaddress:'ManageAddress',
+    detail:'Details',
+    checkout:'Checkout',
+    selectdate:'SelectDate',
 }

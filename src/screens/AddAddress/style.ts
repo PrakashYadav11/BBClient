@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { heightPixel, pixelSizeHorizontal } from '../../utils/ResponsiveDimensions';
+import { heightPixel, pixelSizeHorizontal, widthPixel } from '../../utils/ResponsiveDimensions';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
@@ -12,9 +12,8 @@ const styles = StyleSheet.create({
     inputContainer: {
       width: '100%',
       alignItems: 'center',
-      marginTop:10,
+      marginTop: 10,
     },
-  
     buttonContainer: {
       position: 'absolute',
       bottom: 20,
@@ -33,6 +32,39 @@ const styles = StyleSheet.create({
       shadowOffset: { width: 0, height: 4 },
       elevation: 5,
     },
+    modalView: {
+      width: '100%',
+      position: 'absolute',
+      bottom: 0,
+      backgroundColor: 'white',
+      borderTopLeftRadius: 20,
+      borderTopRightRadius: 20,
+      padding: 20,
+      alignItems: 'center',
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: -2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+      elevation: 5,
+    },
+    iconContainer: {
+      marginBottom: 10,
+    },
+    modalText: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    centeredView: {
+      flex: 1,
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    },
+    successImage:{
+      height:heightPixel(125),
+      width:widthPixel(125),
+    },
   });
-
+  
   export default styles

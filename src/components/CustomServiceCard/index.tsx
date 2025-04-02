@@ -2,9 +2,12 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'; 
 import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, SCREEN_HEIGHT, SCREEN_WIDTH, widthPixel } from '../../utils/ResponsiveDimensions';
+import { NavigationRoutes } from '../../shared/NavigationRoutes';
+import { useNavigation } from '@react-navigation/native';
 
 
 const CustomServiceCard = ({ image, name, price, rating }) => {
+  const navigation = useNavigation();
   return (
     <View style={styles.card}>
       <Image source={image} style={styles.image} />
@@ -26,7 +29,7 @@ const CustomServiceCard = ({ image, name, price, rating }) => {
         <Text style={styles.price}>{price}</Text>
 
         {/* Arrow Button */}
-        <TouchableOpacity style={styles.arrowButton}>
+        <TouchableOpacity style={styles.arrowButton} onPress={()=>navigation.navigate(NavigationRoutes.detail)}>
           <Icon name="arrow-forward" size={fontPixel(20)} color="#fff" />
         </TouchableOpacity>
       </View>

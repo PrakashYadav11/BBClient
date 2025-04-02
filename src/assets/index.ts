@@ -33,6 +33,8 @@ const Images = {
     homeicon:require('./images/homeicon.png'),
     businessicon:require('./images/businessicon.png'),    
     eadit:require('./images/eadits.png'),    
+    selectdate:require('./images/selectDate.png'),
+    addressSuccess:require('./images/addressSuccess.png'),
 }
 
 export default Images

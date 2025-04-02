@@ -26,4 +26,18 @@ export const Strings = {
     addaddress:'Add Address For Batter Navigation',
     alreadyDone:'Note: Ignore If Your Have Already Done😄',
     clickHere:"Click Here To Add Address",
+    location:"New Delhi,INDIA",
+    recomanded:"Recommended Services",
+    categori:"Categories",
+    mechanic:"Car Mechanic",
+    easygo:"EasyGo Electricians",
+    serviceDesc:"Your trusted electricians shop for all electrical supplies, wiring, lighting, and repair services. Quality products and expert solutions for homes and businesses.",
+    services:'Services',
+    detail:"Details",
+    checkout:"Checkout",
+    addVehicleInfo:"Add Vehicle Information",
+    addVehicleImg:"Upload Vehicle Image",
+    uploadLicense:"Upload Driving License",
+    uploadInsurance:"Upload Vehicle Insurance",
+
 }

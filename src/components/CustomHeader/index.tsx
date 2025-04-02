@@ -6,9 +6,10 @@ import styles from "./style";
 
 interface CustomHeaderProps {
   headerText: string;
+  onPress:any;
 }
 
-const CustomHeader: React.FC<CustomHeaderProps> = ({ headerText }) => {
+const CustomHeader: React.FC<CustomHeaderProps> = ({ headerText,onPress }) => {
 //   const navigation = useNavigation(); // Get navigation object
 
 //   const goBack = () => {
@@ -20,7 +21,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({ headerText }) => {
   return (
     <View style={styles.headerContainer}>
       {/* Back Button */}
-      <TouchableOpacity style={styles.backButton}>
+      <TouchableOpacity style={styles.backButton} onPress={onPress}>
         <Image source={Images.backbtn} style={styles.backImage} resizeMode="contain" />
       </TouchableOpacity>
 

@@ -30,5 +30,3 @@ const UserType = () => {
 };
 
 export default UserType;
-
-
