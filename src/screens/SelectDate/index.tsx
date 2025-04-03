@@ -44,7 +44,7 @@ const SelectDate = () => {
   return (
     <View style={styles.container}>
       {/* Custom Header */}
-      <CustomHeader headerText={Strings.checkout} onPress={()=>navigation.navigate(NavigationRoutes.checkout)} />
+      <CustomHeader headerText={Strings.checkout} rightIcon={false} leftIcon={true} LeftIconImage={undefined}  />
 
       {/* Date Selection Section */}
       <Text style={styles.sectionTitle}>Please choose date and time</Text>
@@ -78,7 +78,7 @@ const SelectDate = () => {
 
       {/* Submit Button */}
       <View style={styles.btn}>
-      <CustomButton label={'Submit'} onPress={undefined}/>
+      <CustomButton label={'Submit'} onPress={()=>navigation.navigate(NavigationRoutes.paymentsummary)}/>
       </View>
     </View>
   );

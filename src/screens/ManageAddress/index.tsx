@@ -37,7 +37,7 @@ const ManageAddress = () => {
 
   return (
     <View style={globalStyles.containerBg}>
-      <CustomHeader headerText={'Manage Address'}/>
+      <CustomHeader headerText={'Manage Address'} rightIcon={false} leftIcon={true} LeftIconImage={undefined}/>
       <TouchableOpacity style={styles.addAddressButton}>
         <Text style={styles.addAddressText}>{Strings.plusaddAddress}</Text>
       </TouchableOpacity>

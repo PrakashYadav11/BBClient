@@ -15,4 +15,12 @@ export const NavigationRoutes = {
     detail:'Details',
     checkout:'Checkout',
     selectdate:'SelectDate',
+    eaditProfile:'EaditProfile',
+    termscondition:'TermsCondition',
+    help:'Help',
+    faqs:'FAQs',
+    paymentsummary:'PaymentSummary',
+    bookingsuccess:'BookingSuccess',
+    ChatDetail:'ChatDetail',
+    historydetail:'HistoryDetail',
 }

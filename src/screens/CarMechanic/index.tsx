@@ -15,6 +15,8 @@ import Colors from '../../shared/theme/colors';
 import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, SCREEN_WIDTH, widthPixel } from '../../utils/ResponsiveDimensions';
 import Images from '../../assets';
 import { Strings } from '../../shared/strings';
+import { NavigationRoutes } from '../../shared/NavigationRoutes';
+import { useNavigation } from '@react-navigation/native';
 
 const CarMechanic = () => {
   const renderServiceItem = ({ item }) => (
@@ -25,12 +27,12 @@ const CarMechanic = () => {
       rating={item.rating}
     />
   );
-
+const navigation = useNavigation();
   return (
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate(NavigationRoutes.bottom)}>
           <Image source={Images.backbtn} style={styles.back}/>
         </TouchableOpacity>
         <Text style={styles.headerTitle}>{Strings.mechanic}</Text>

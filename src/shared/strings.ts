@@ -39,5 +39,19 @@ export const Strings = {
     addVehicleImg:"Upload Vehicle Image",
     uploadLicense:"Upload Driving License",
     uploadInsurance:"Upload Vehicle Insurance",
-
+    profilename:'Alexander D’Souza',
+    policy:'Cancelation Policy',
+    terms:'Terms & conditions',
+    lorem:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    gettouch:'Get in Touch',
+    faqs:'FAQs',
+    booking:'Your Service Has Been ',
+    success:'Booked Successfully.',
+    rate:'Select Rate',
+    name:'Varshil Electrical',
+    dateInfo:'Sat, Aug 12th at 3:30 PM Booking ID : 87HJBHJ87',
+    amountpaid:'Amount Paid : $95',
+    homeaddress:'21 Cyrenius Avenue, Plainville,ct, 6062 United States',
+    time:'Sat, Aug 12th at 3:30 PM',
+    
 }

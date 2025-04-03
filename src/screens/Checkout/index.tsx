@@ -15,7 +15,7 @@ const Checkout = () => {
   return (
     <View style={styles.container}>
       {/* Custom Header */}
-      <CustomHeader headerText={Strings.checkout} onPress={()=>navigation.navigate(NavigationRoutes.detail)}/>
+      <CustomHeader headerText={Strings.checkout} rightIcon={false} leftIcon={true} LeftIconImage={undefined} />
 
       {/* Service Info Section */}
       <View style={styles.serviceInfo}>

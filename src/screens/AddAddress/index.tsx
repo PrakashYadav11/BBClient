@@ -24,7 +24,7 @@ const AddAddress = () => {
 
   return (
     <View style={styles.container}>
-      <CustomHeader headerText={Strings.addAddress} onPress={() => navigation.navigate(NavigationRoutes.bottom)} />
+      <CustomHeader headerText={Strings.addAddress} rightIcon={false} leftIcon={true} LeftIconImage={undefined} />
       <View style={styles.inputContainer}>
         <CustomInput placeholder={Strings.searchAdd} />
         <CustomInput placeholder={Strings.company} />

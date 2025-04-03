@@ -1,17 +1,16 @@
 import { StyleSheet } from "react-native";
 import { widthPixel } from "../../utils/ResponsiveDimensions";
 
-
 const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center", // Centers the text
+    justifyContent: "center", // Keeps text centered
     paddingHorizontal: widthPixel(16),
     paddingVertical: widthPixel(12),
     backgroundColor: "#fff",
     position: "relative",
-    marginTop:10,
+    marginTop: 10,
   },
   backButton: {
     width: widthPixel(40),
@@ -21,15 +20,26 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
-    left: widthPixel(16), // Keeps it on the left
+    left: widthPixel(16), // Ensures it stays on the left
+  },
+  rightButton: {
+    width: widthPixel(40),
+    height: widthPixel(40),
+    borderRadius: widthPixel(20),
+    backgroundColor: "blue",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    right: widthPixel(16), // Ensures it stays on the right
   },
   backImage: {
     width: widthPixel(20),
     height: widthPixel(20),
   },
   textContainer: {
-    flex: 1, // Takes full width, allowing centering
+    flex: 1, // Ensures text remains centered
     alignItems: "center",
+    justifyContent: "center",
   },
   headerText: {
     fontSize: widthPixel(18),
@@ -38,4 +48,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles
+export default styles;
